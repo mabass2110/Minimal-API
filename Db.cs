@@ -15,11 +15,13 @@ namespace PizzaStore.DB;
      new Pizza{ Id=3, Name="The Noring, Pizza shaped like a Viking helmet, where's the mead"} 
    };
 
+//Static method that return a List of Pizzas
    public static List<Pizza> GetPizzas() 
    {
      return _pizzas;
    } 
 
+//Static method that returns a Single Pizza in Pizzas List using its ID
    public static Pizza ? GetPizza(int id) 
    {
      return _pizzas.SingleOrDefault(pizza => pizza.Id == id);
@@ -31,6 +33,7 @@ namespace PizzaStore.DB;
      return pizza;
    }
 
+//Static function using in the POST request
    public static Pizza UpdatePizza(Pizza update) 
    {
      _pizzas = _pizzas.Select(pizza =>
@@ -44,6 +47,7 @@ namespace PizzaStore.DB;
      return update;
    }
 
+//Static function that used in the DELETE route that recives an id as a parameter
    public static void RemovePizza(int id)
    {
      _pizzas = _pizzas.FindAll(pizza => pizza.Id != id).ToList();
