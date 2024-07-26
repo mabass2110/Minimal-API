@@ -1,4 +1,4 @@
-# PizzaStore API
+# PizzaStore  Minimal API
 
 Welcome to the PizzaStore API! This is a minimal API built with ASP.NET Core that allows you to manage pizzas in our store. It supports basic CRUD operations (Create, Read, Update, Delete) and comes with Swagger documentation for easy exploration.
 
@@ -15,13 +15,13 @@ To run this API, ensure you have the following installed on your machine:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/pizzastore-api.git
+    git clone https://github.com/mabass2110/Minimal-api.git
     ```
 
 2. Navigate into the project directory:
 
     ```bash
-    cd pizzastore-api
+    cd Minimal-api
     ```
 
 3. Restore the project dependencies:
